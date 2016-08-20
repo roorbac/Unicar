@@ -1,0 +1,40 @@
+ubuntu -  <link href="http://allfont.ru/allfont.css?fonts=ubuntu-bold" rel="stylesheet" type="text/css" />  
+ font-family: 'Ubuntu Bold', arial;
+
+
+<link href="http://allfont.ru/allfont.css?fonts=roboto-regular" rel="stylesheet" type="text/css" />
+
+ <link href="http://allfont.ru/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css" />
+
+ <link href="http://allfont.ru/allfont.css?fonts=ubuntu-light" rel="stylesheet" type="text/css" />
+
+
+Fontello
+УСТАНОВКА:
+
+Вариант 1. Вставляете прямую ссылку на шрифт, между тегами <head></head>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+Вариант 2. Скачиваете шрифт с оф. сайта, загружаете папку со шрифтом и стилями, к себе на сайт, и указываете путь до папки со шрифтом на вашем сервере
+
+<link rel="stylesheet" href="путь_до_папки/font-awesome/css/font-awesome.min.css"
+ИСПОЛЬЗОВАНИЕ:
+
+Выбираете нужную вам иконку в каталоге иконок на официальном сайте fontawesome.io/icons/
+Кликаете по иконке и на открывшейся странице копируете код иконки, к примеру: <i class="fa fa-rub"></i>
+и вставляете скопированный код, на свой сайт, в нужное вам место. Все, иконка установлена!
+
+Если у вас возникли трудности при установки этого шрифта, наши специалисты, в течении нескольких минут, окажут вам помощь, за символическое вознаграждение. Для этого вы можете обратится к нам через онлайн консультант на нашем сайте или используя другую контактную информацию.
+
+При использовании шрифта может возникнуть такой баг, когда шрифт fontawesome может не отображаться в браузере Firefox.
+C чем это связанно мы так и не определили, способов бороться с этим багом можно найти множетсво, мы перечислим основную их часть, может вам понадобится вам при лечении этого бага:
+
+1. Загружать шрифт не с вашего хостинга, а с основного сервера netdna.bootstrapcdn.com, как показано в первом варианте подключения.
+2. Загрузить в папку со шрифтом файл .htaccess со следующим содержимым:
+Order Deny,Allow
+Allow from all
+3. Добавить src: local('FontAwesome') в путь загрузки шрифта в файле font-awesome.css
+@font-face {font-family: 'FontAwesome'; src: local('FontAwesome');}
+ 4. В своем шаблоне, добавить рядом с папкой "fonts" создать папку "font" и загрузить туда файлы шрифтов.
+Вот такие костыли помогают иногда испарить ошибку отображения шрифта в Firefox. Если вы знаете еще какие-то методы исправления бага, будем рады вашим комментариям, сообщите нам.
